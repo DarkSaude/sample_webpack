@@ -1,0 +1,10 @@
+block variables
+	- var pageTitle = 'Мой шаблон';
+	- var pageLang = 'ru';
+
+doctype html
+html(lang=pageLang)
+	include ../component/_head
+	body
+		.wrapper
+			block content

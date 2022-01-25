@@ -1,0 +1,151 @@
+/* < --- --- / Mixin для навигационно меню \ --- --- > */
+
+@mixin nav {
+
+	.nav {
+		width: $htmlWidth;
+		
+		.list {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+
+			.item {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				padding-top: calc(80px / 3);
+				padding-bottom: calc(80px / 3);
+
+				.fa-arrow-alt-circle-down {
+					color: green;
+				}
+				.fa-arrow-alt-circle-up {
+					display: none;
+				}
+
+				&:hover .fa-arrow-alt-circle-down {
+					display: none;
+				}
+
+				&:hover .fa-arrow-alt-circle-up {
+					display: block;
+					color: green;
+				}
+
+				&:hover .dropDown {
+					opacity: 1;
+					visibility: visible;
+					pointer-events: all;
+					z-index: 1;
+					transition: all .5s ease 0s;
+				}
+
+			}
+
+			.dropDown {
+				position: absolute;
+				width: $htmlWidth;
+				max-width: 1200px;
+				margin: $margin;
+				transform: translateY(100%);
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: orange;
+				opacity: 0;
+				visibility: hidden;
+				pointer-events: none;
+				z-index: -999;
+				transition: all .5s ease 0s;
+			}
+
+		}
+
+		._hide {
+			display: none;
+			position: absolute;
+			z-index: -999;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+
+
+		div {
+			display: none;
+		}
+
+	}
+
+}
+
+/* < --- --- / Изменение размеров для бургер меню \ --- --- > */
+
+@mixin burger($width,$height) {
+
+	._burger {
+		position: relative;
+		cursor: pointer;
+		width: #{$width+px};
+		height: #{$height+px};
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		& > span {
+			position: absolute;
+			width: 60%;
+			height: 2px;
+			background-color: $colorBlack;
+			transition: all .1s ease;
+		}
+
+		&::before {
+			position: absolute;
+			content: '';
+			width: 80%;
+			height: 2px;
+			background-color: $colorBlack;
+			top: calc( #{$height + px} / 4 );
+			transition: all .3s ease;
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			width: 80%;
+			height: 2px;
+			background-color: $colorBlack;
+			bottom: calc( #{$height + px} / 4 );
+			transition: all .3s ease;
+		}
+
+	}
+
+	._activeB {
+
+		& > span {
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+			transition: all .1s ease;
+		}
+		
+		&::before {
+			transform: rotate(-140deg);
+			transition: all .3s ease;
+			top: calc( #{$height + px} / 2 );
+		}
+
+		&::after {
+			transform: rotate(140deg);
+			transition: all .3s ease;
+			top: calc( #{$height + px} / 2 );
+		}
+
+	}
+
+}

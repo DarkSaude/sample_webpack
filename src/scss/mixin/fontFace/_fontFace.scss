@@ -1,0 +1,21 @@
+/* < --- --- / Подключение шрифтов из папки assets/font \ --- --- > */
+
+@mixin fontFacettf ( $fontFamily, $fontSrc, $fontWeight ) {
+	@font-face {
+		font-family: '#{$fontFamily}';
+		src: url("../assets/font/#{$fontFamily}.ttf");
+		font-weight: #{$fontWeight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
+@mixin fontFaceWoff ( $fontFamily, $fontSrc, $fontWeight ) {
+	@font-face {
+		font-family: '#{$fontFamily}';
+		src: url("../assets/font/#{$fontFamily}.woff2");
+		font-weight: #{$fontWeight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
