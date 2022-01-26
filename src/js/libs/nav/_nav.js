@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 /* <= --- _ --- Первый вариант шаблона меню --- _ --- => */
 
-const sample = () => {
+function sample () {
 
 /* <= --- _ --- Определяем через что сидит пользователь Пк или Мобильный --- _ --- => */
 
@@ -61,7 +61,7 @@ const sample = () => {
 
 /* <= --- _ --- Добавление классов тегам при размерах экрана --- _ --- => */
 
-const size = () => {
+function size () {
 
 	if (window.innerWidth <= 768) {
 
@@ -255,7 +255,7 @@ const size = () => {
 
 
 
-const resize = () => {
+function resize() {
 
 window.addEventListener('resize', () => {
 
@@ -466,7 +466,7 @@ size();
 
 /* <= --- _ --- Добавление класса тегу div с классом _burger --- _ --- => */
 
-const burger = () => {
+function burger() {
 
 /* <= --- _ --- Получение класса на странице --- _ --- => */
 
@@ -496,7 +496,7 @@ burger();
 
 /* <= --- _ --- Табуляция между item --- _ --- => */
 
-const tabs_nav = () => {
+function tabs_nav() {
 
 
 
