@@ -7,18 +7,9 @@
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	font-family: robot;
 
 	footer {
 		margin-top: auto;
 	}
-
-}
-
-/* < --- --- / Настройка класса container для страницы \ --- --- > */
-
-.container {
-
-	max-width: $contWidth;
 
 }

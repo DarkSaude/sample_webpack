@@ -1,6 +1,12 @@
 /* <------ Подключение js ------> */
 
-import './libs/nav/_nav';
+/* <------ Подключение nav ------> */
+
+			 import './libs/nav/_nav';
+
+/* <------ Подключение quiz ------> */
+
+			 import './libs/quiz/_quiz';
 
 /* <------ Подключение font awesome ------> */
 
@@ -20,4 +26,7 @@ import '../pug/component/_header.pug';
 import '../pug/component/_footer.pug';
 import '../pug/component/_nav.pug';
 import '../pug/layout/_sample.pug';
+
+
+/* <------ Подключение php ------> */
 

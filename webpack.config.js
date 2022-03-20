@@ -25,7 +25,7 @@ const optimization = () => {
 	return configObj;
 };
 
-/* <------ Настройка пути файлов ждя PUG ------> */
+/* <------ Настройка пути файлов для PUG ------> */
 
 const PAGES_DIR = path.resolve(__dirname, `./src/pug/pages/`)
 			PAGES = fs.readdirSync(PAGES_DIR).filter(filename => filename.endsWith('.pug'));
@@ -62,14 +62,23 @@ module.exports = {
 	/* <------ DevServer ------> */
 
 	devServer: {
-		historyApiFallback: true,
 		static: {
       directory: path.join(__dirname, './app'),
     },
+		historyApiFallback: true,
+		// historyApiFallback: {
+		// 	index: `/index.php`,
+		// },
 		open: true,
 		compress: true,
 		hot: true,
-		port: 3000,
+		host: `www`,
+		// port: 3000,
+		proxy: {
+			'**': {
+				target: `http://www/`,
+			},
+		},
 	},
 
 /* <------ optimization ------> */
