@@ -1,0 +1,11 @@
+.header {
+  .header-title {
+    &__text {
+      padding: $paddingStandart;
+      font-weight: 600;
+      font-style: italic;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}

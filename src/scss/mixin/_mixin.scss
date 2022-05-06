@@ -1,9 +1,13 @@
 /* < --- --- / Миксин подключение адаптивного шрифта \ --- --- > */
 
-			@import "./adaptiv/adaptiveFontSize";
+@import "./adaptiv/adaptiveFontSize";
 
 /* < --- --- / Миксин подключение шрифтов \ --- --- > */
 
-			@import "./fontFace/fontFace";
+@import "./fontFace/fontFace";
+
+/* < --- --- / Миксин подключение container \ --- --- > */
+
+@import "./container/container";
 
 /* < --- --- / Миксин подключение компонентов \ --- --- > */

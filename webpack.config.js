@@ -72,13 +72,13 @@ module.exports = {
 		open: true,
 		compress: true,
 		hot: true,
-		host: `www`,
+		// host: `www`,
 		// port: 3000,
-		proxy: {
-			'**': {
-				target: `http://www/`,
-			},
-		},
+		// proxy: {
+		// 	'**': {
+		// 		target: `http://www/`,
+		// 	},
+		// },
 	},
 
 /* <------ optimization ------> */

@@ -1,27 +1,27 @@
 /* < --- --- / Сброс стилей \ --- --- > */
 
-			@import "./reset_styles/normalize";
-			@import "./reset_styles/zeroing";
+@import "./reset_styles/normalize";
+@import "./reset_styles/zeroing";
 
 /* < --- --- / Подключение переменных \ --- --- > */
 
-			@import "./variables/variables_scss";
-			@import "./variables/variables_css";
+@import "./variables/variables_scss";
+@import "./variables/variables_css";
 
 /* < --- --- / Подключение миксинов \ --- --- > */
 
-			@import "./mixin/mixin";
+@import "./mixin/mixin";
 
 /* < --- --- / Настройка Страницы \ --- --- > */
 
-			@import "./conf/conf";
+@import "./conf/conf";
 
 /* < --- --- / Подключение частей стилей \ --- --- > */
 
-			@import "./parts/header";
-			@import "./parts/main";
-			@import "./parts/footer";
+@import "./parts/_header/header";
+@import "./parts/_main/main";
+@import "./parts/_footer/footer";
 
 /* < --- --- / Подключение медия запросов \ --- --- > */
 
-			@import "./media/media";
+@import "./media/media";

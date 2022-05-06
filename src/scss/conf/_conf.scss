@@ -1,15 +1,23 @@
-/* < --- --- / Настройка класса wrapper для страницы \ --- --- > */
+/* < --- --- / Настройка класса page для страницы \ --- --- > */
 
-.wrapper {
-	min-width: $htmlWidth;
-	min-height: $htmlHeight;
-	@include fontSize(16, 14);
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
+.page {
+  @include fontSize(16, 14);
 
-	footer {
-		margin-top: auto;
-	}
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: $marginStandart;
+  width: $htmlWidth;
+  height: $htmlHeight;
+  min-height: $htmlMinHeight;
+  max-width: $htmlMaxWidth;
 
+  .page__main {
+    flex: 1 0 auto;
+  }
+
+  .page__footer {
+    flex: 0 0 auto;
+    margin-top: auto;
+  }
 }

@@ -2,73 +2,69 @@
 
 /* < --- --- / Размеры Ширины и Высоты на странице \ --- --- > */
 
+/* <--- --- Размеры для всей страницы --- ---> */
 
+$htmlWidth: 100%;
+$htmlMaxWidth: 1440px;
+$htmlHeight: 100%;
+$htmlMinHeight: 100vh;
 
-/*<--- --- Размеры для всей страницы --- --->*/
+/* <--- --- Размеры для container --- ---> */
 
-			$htmlWidth:  100%;
-			$htmlHeight: 100%;
+$containerWidth: 100%;
+$containerMaxWidth: 868px;
+$contaiernHeight: 100%;
+$contaiernMaxHeight: 100%;
 
-/*<--- --- Размеры для container --- --->*/
+/* <--- --- Размеры шрифта для всей страницы ( По макету ) --- ---> */
 
-			$contWidth:  1200px;
-			$contHeight: 100%;
-
-/*<--- --- Размеры шрифта для всей страницы ( По макету ) --- --->*/
-
-			$fontWidth: 1920; // Ширина Экрана заданная в макете
-
-
+$fontWidth: 1920; /* Ширина Экрана заданная в макете */
 
 /* < --- --- / Размеры Ширины и Высоты на странице \ --- --- > */
 
+/* < --- --- / Подключение Шрифта на страницу сайте \ --- --- > */
 
+/* <--- --- Подключение шрифта для всего сайта --- ---> */
+
+/*	@include fontFacettf(robot, robot, normal);	*/
+
+/*	формат ttf	*/
+
+/*	@include fontFaceWoff(robot, robot, normal); /*	формат woff2	*/
+
+/*	@include fontFaceOtf(robot, robot, normal);	*/
+
+/* формат otf	*/
 
 /* < --- --- / Подключение Шрифта на страницу сайте \ --- --- > */
 
-
-
-/*<--- --- Подключение шрифта для всего сайта --- --->*/
-
-
-	//@include fontFacettf(robot, robot, normal); // формат ttf
-	//	@include fontFaceWoff(robot, robot, normal); // формат woff2
-
-
-
-/* < --- --- / Подключение Шрифта на страницу сайте \ --- --- > */
-
-
-
 /* < --- --- / Отступы Marging, Padding \ --- --- > */
 
-
-
-			$padding: 12px 12px;
-			$margin: 0 auto;
-
-
+$paddingStandart: 12px 12px;
+$marginStandart: 0 auto;
 
 /* < --- --- / Отступы Marging, Padding \ --- --- > */
-
-
 
 /* < --- --- / Цвета на сайт \ --- --- > */
 
-/*<--- --- Цвета --- --->*/
+/* <--- --- Цвета --- ---> */
 
 // Черный
-			$colorBlack: #000000;
+$colorBlack: #000;
+
 // Белый
-			$colorWhite: #ffffff;
+$colorWhite: #fff;
+
 // синий
-			$colorBlue: #0000ff;
+$colorBlue: #00f;
+
 // Зелёный
-			$colorGreen: #00ff00;
+$colorGreen: #0f0;
+
 // Желтый
-			$colorYellow: #ffff00;
+$colorYellow: #ff0;
+
 // Оранжевый
-			$colorOrange: #ffa500;
+$colorOrange: #ffa500;
 
 /* < --- --- / Цвета на сайт \ --- --- > */
-
